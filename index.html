@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script type="text/javascript" type="text/javascript">
+        Parse.initialize("5md2VWOgVOD4HHNM0QNQpmE2bEJPnl4GA9azTi5Z", "HKR9IDWIYaPpslsv1ihiRiYciRvGHn17OiXd1rfH"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+        Parse.serverURL = 'https://parseapi.back4app.com/'
+    </script>
+
+    <script src="controller.js"></script>
+</head>
+
+<body>
+    <div>
+        <button onclick="retreveData()">Retreve Data</button>
+        <div>
+            <h2 id="needsVal">Needs</h2>
+            <h2 id="wantsVal">Wants</h2>
+            <h2 id="savingsVal">Savings</h2>
+        </div>
+
+        <div>
+            <input type="text" id="Income" placeholder="Income to split">
+            <button onclick="splitIncome()">Split Income</button>
+            <h2 id="needs">Needs</h2>
+            <h2 id="wants">Wants</h2>
+            <h2 id="savings">Savings</h2>
+            <button onclick="saveData()">Save Data</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
